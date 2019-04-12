@@ -71,3 +71,11 @@ gapminder[850:870, ]
 median(gapminder$pop)
 
 #how would you preview middle lines if you didn't know dimensions
+#challenge 2
+#save R script
+#git add, commit, pull, push
+
+#challenge 3
+#explain what everything that str(gapminder)prints out
+str(gapminder)
+
