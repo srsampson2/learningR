@@ -54,7 +54,43 @@ character_vector_example
 character_coerced_to_numeric <- as.numeric(character_vector_example)
 character_coerced_to_numeric
 
+#useful coercion
+cats$likes_string
+typeof(cats$likes_string)
+cats$likes_string <- as.logical(cats$likes_string)
+cats$likes_string
+
+#appending 
+ab_vector <- c('a', 'b')
+
+#populate quickly
+mySeries <- 1:10
+mySeries
+
+str(cats$weight)
+str(cats$coat)
+coats <- c('tabby','tortiseshell','tortiseshell','black')
+str(coats)
+CATegories <- factor(coats)
+str(CATegories)
+
+#age of cats
+age <-c(2,NA,5)
+cats
+cbind(cats, age)
+
+#adding a row
+nrow(cats)
+newRow <- list("tortoiseshell",3.3,TRUE,9)
+cats <- rbind(cats,newRow)
+cats
+levels(cats$coat)
+levels(cats$coat) <- c(levels(cats$coat), 'tortoiseshell')
 
 
+#ommitting NAS
+na.omit(cats)
+cats <-na.omit(cats)
+cats
 
-
+cats <-na.omit(cats)
